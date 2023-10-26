@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" href="./mime.svg" />
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+    <script src="https://rawcdn.githack.com/donmccurdy/aframe-extras/v6.1.0/dist/aframe-extras.min.js"></script>
+  </head>
+  <body style="margin: 0px; overflow: hidden">
+    <a-scene embedded>
+      <a-marker type="pattern" url="./marker_03.patt">
+        <a-entity
+          position="0 0 0"
+          rotation="-80 0 0"
+          scale="0.5 0.5 0.5"
+          gltf-model="./scene/mimeAR_project_capoera_01.glb"
+          animation-mixer
+        ></a-entity>
+      </a-marker>
+      <a-entity camera position="0 0 0"></a-entity>
+    </a-scene>
+  </body>
+</html>
